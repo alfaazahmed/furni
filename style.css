@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* share styles */
+
+.display-flex {
+    display: flex;
+}
+
+.dark-02 {
+    color: rgb(106, 106, 106);
+}
+
+.dark-03 {
+    color: rgb(255, 255, 255);
+}
+
+/* header styles */
+
+header {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3B5D50;
+    padding: 2.5rem 9rem;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    display: none;
+}
+
+.navbar ul {
+    margin-left: 6rem;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 2.5rem;
+    color: rgb(106, 106, 106);
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    border-bottom: 5px solid rgb(175, 175, 3);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .55);
+}
+
+.nav-icons {
+    color: #fff;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 1.25rem 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar li, .nav-icons  {
+        display: none;
+    }
+}
